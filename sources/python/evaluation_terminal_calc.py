@@ -64,6 +64,7 @@ def calc():
             exit()
         define()
     except KeyboardInterrupt:
-        print("Program terminated by user")
+        os.system('cls||clear')
+        print("Program terminated by user\n")
         exit()
 calc()
