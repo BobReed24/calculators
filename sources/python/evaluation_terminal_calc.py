@@ -56,7 +56,7 @@ def calc():
             print(f'Evaluation Calculator\n{dashes}\nType "exit()" to exit the program\n')
             while True:
                 try:
-                    res = eval(input(">: "))
+                    res = float(eval(input(">: ")))
                     print(res, "\n")
                 except (SyntaxError, NameError, TypeError, ValueError) as e:
                     print(f"Err: {e}")
