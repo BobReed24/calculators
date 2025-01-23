@@ -2,7 +2,7 @@ import time
 import os
 import sys
 import random
-def calc
+def calc()
     try:
         def start():
             dashes2 = "-------------------------------------"
