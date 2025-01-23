@@ -39,7 +39,10 @@ def calc():
                         print("You have no rizz!")
                     elif idiotic == 4:
                         print("Bruh, don't get it wrong next time!")
-                    elif idiotic == 5:
+                    elif idiotic == 5 and osname == 'nt':
+                        print("Ok you are safe from the trick because you are on windows.")
+                        calc()
+                    elif idiotic == 5 and osname == 'posix':
                         print("The computer chose 5 because it thinks you are stupid.")
                         time.sleep(2)
                         os.system('cls||clear')
@@ -81,6 +84,8 @@ def calc():
         def define():
             global dashes
             dashes = "------------------------"
+            global osname
+            osname = os.name
             start()
         def main():
             os.system('cls||clear')
