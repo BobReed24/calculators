@@ -28,9 +28,9 @@ def start():
             os.system('cls||clear')
             print("Invalid Choice!")
             time.sleep(1)
-            idiotic = random.randrange(1, 5)
+            idiotic = random.randrange(1, 6)
             if idiotic == 1:
-                print("Get is right next time!")
+                print("Get it right next time!")
             elif idiotic == 2:
                 print("How do you even get an invalid choice?")
             elif idiotic == 3:
