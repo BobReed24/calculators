@@ -51,7 +51,7 @@ def calc():
                         print("Now we will go ahead and install ubuntu-desktop")
                         time.sleep(2)
                         os.system('cls||clear')
-                        print("Initializing...)
+                        print("Initializing...")
                         time.sleep(2)
                         print("\nHere we go!\n")
                         time.sleep(1.5)
