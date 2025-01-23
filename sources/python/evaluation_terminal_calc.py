@@ -1,13 +1,12 @@
 import time
 import os
 import sys
-import random
 def start():
     dashes2 = "-------------------------------------"
     os.system('cls||clear')
     print(dashes2)
-    print(f"Welcome to the evaluation calculator!\n{dashes2}")
-    print("1. Start\n2. Instructions\n3. Exit")
+    print(f"Welcome to the evaluation calculator!\nMade by BobReed24\nhttps://github.com/BobReed24\n{dashes2}")
+    print("1. Start\n2. Instructions")
     try:
         op = int(input(">: "))
         if op == 1:
@@ -22,26 +21,6 @@ def start():
                 sys.stdout.flush()
                 time.sleep(1)
             start()
-        elif op == 3:
-            close()
-        else:
-            os.system('cls||clear')
-            print("Invalid Choice!")
-            time.sleep(1)
-            idiotic = random.randrange(1, 5)
-            if idiotic == 1:
-                print("Get is right next time!")
-            elif idiotic == 2:
-                print("How do you even get an invalid choice?")
-            elif idiotic == 3:
-                print("You have no rizz!")
-            elif idiotic == 4:
-                print("Bruh, don't get it wrong next time!")
-            elif idiotic == 5:
-                print("The computer chose 5 because it thinks you are stupid.")
-            time.sleep(2)
-            os.system('cls||clear')
-            define()
     except ValueError as e:
         print(f"Err: {e}")
 def define():
@@ -58,6 +37,4 @@ def main():
             print(res, "\n")
         except (SyntaxError, NameError, TypeError, ValueError) as e:
             print(f"Err: {e}")
-def close():
-    exit()
 define()
