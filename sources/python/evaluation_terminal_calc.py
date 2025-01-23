@@ -68,6 +68,7 @@ def calc():
                         os.system('cls||clear')
                         time.sleep(2)
                         print("\nHere we go!\n")
+                        time.sleep(1.5)
                         os.system('cls||clear')
                         time.sleep(1.5)
                         os.system('cls||clear')
